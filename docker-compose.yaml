@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  comfyui-reliq-intel:
+    image: docker.io/reliqcontainers/comfyui:xpu-master
+    container_name: comfyui_reliq_xpu
+    # ports: wird bei network_mode: host ignoriert, da der Port automatisch geöffnet wird
+    network_mode: host
+    devices:
+      - /dev/dri:/dev/dri
+    volumes:
+      - ./comfyui_data/models:/app/models
+      - ./comfyui_data/user:/app/user
+      - ./comfyui_data/custom_nodes:/app/custom_nodes
+      - ./comfyui_data/output:/app/output
+      - ./comfyui_data/input:/app/input
+      - ./startup.sh:/startup.sh:ro
+    environment:
+      - CLI_ARGS=
+    ipc: host
+    command: sh /startup.sh
+    restart: unless-stopped
+

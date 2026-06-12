@@ -1,0 +1,46 @@
+# Large model files — download via startup.sh
+comfyui_data/models/unet/
+comfyui_data/models/vae/
+comfyui_data/models/clip/
+comfyui_data/models/diffusers/
+
+# Generated output images
+comfyui_data/output/
+
+# Input photos (may contain personal/copyrighted content)
+comfyui_data/input/
+
+# ComfyUI runtime state
+comfyui_data/user/comfyui.db
+comfyui_data/user/comfyui.log
+comfyui_data/user/default/ComfyUI-Manager/cache/
+comfyui_data/user/default/ComfyUI-Manager/snapshots/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Temp files
+*.tmp
+*.bak
+docker-compose (Kopie).yaml
+qwen-test-builtin.json
+qwen-test-corrected.json
+qwen-test-fixed.json
+qwen-test-simple.json
+qwen-test.json
+comfyui_data/user/comfyui.prev.log
+comfyui_data/user/comfyui.prev2.log
+comfyui_data/user/default/comfy.settings.json
+comfyui_data/user/default/ComfyUI-Manager/channels.list
+comfyui_data/user/default/workflows/pv_safety_dual_image copy 2.json
+comfyui_data/user/default/workflows/pv_safety_dual_image copy 3.json
+comfyui_data/user/default/workflows/pv_safety_dual_image copy.json
+comfyui_data/user/default/workflows/pv_safety_dual_image_w1.json
+comfyui_data/user/default/workflows/pv_safety_working.json
+comfyui_data/user/default/workflows/qwen_test1 (3).json
+comfyui_data/user/default/workflows/qwen_test1_latest2.json
+.gitignore
+comfyui_data/user/default/workflows/home/jost/DEV/2025_Hackaton_CopilotArbeitsicherheit/Qwen-Image-Edit/qwen_test1_latest2.json
+comfyui_data/user/default/workflows/qwen-test-simple_latest.json
